@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">Car</a>  
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Loan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                </a></li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <section id="cars" class="about-car">
+        <div class="container col-xxl-10 pt-5">
+            <div class="row flex-lg flex-row-reverse">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <h1 class="display-4 fw-bold text-primary-emphasis pb-3">Buy Modern Cars Immediately</h1>
+                    <p class="fw-bold text-secondary fs-5 pb-5">Get more benefits from the loan payment</p>
+                </div>
+                <div class="col-10 col-md-8 col-lg-6 ">
+                    <img class="d-block" src="./images/car-4.jpeg" alt="car"  max-width="100%" height="auto">
+                    
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section id="loan" class="payment-method">
+        <div class="container col-xxl-10 pt-5 pb-3">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="" src="./images/car-3.jpeg" alt="car" width="200">
+                    <img class="" src="./images/car-7.jpeg" alt="car" width="200">
+                </div>
+                <div class="col-lg-3">
+                  <h3 class="fw-bold text-primary-emphasis">Loan EMI Calculator</h3>
+                  <form class="form-calculator">
+                    <div class="form-group">
+                      <label for="amount">Loan Amount:</label>
+                      <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">Rs.</div>
+                        </div>
+                        <input type="text" class="form-control" id="amount" value="10,00,000">
+                      </div>
+                      <div id="slider" class="emi-input ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 14.1631%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 14.1631%;"></span></div>
+                    </div>
+        
+                    <div class="form-group">
+                      <label for="amount">Interest Rate :</label>
+                      <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">%</div>
+                        </div>
+                        <input type="text" class="form-control" id="interest" value="6">
+                      </div>
+                      <div id="slider-interest" class="emi-input ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 30.7692%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 30.7692%;"></span></div>
+                    </div>
+        
+                    <div class="form-group">
+                      <label for="amount">Loan Tenure :</label>
+                      <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">Months</div>
+                        </div>
+                        <input type="text" class="form-control" id="tenure" value="60">
+                      </div>
+                      <div id="slider-tenure" class="emi-input ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 6.89655%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 6.89655%;"></span></div>
+                    </div>
+        
+                  </form>
+                </div>
+                <div class="col-lg-3">
+                  <div class="emi-details">
+                    <div class="emi-details-head">
+                      <h3 class="fw-bold text-primary-emphasis">Your EMI Details</h3>
+                    </div>
+                    <div class="emi-details-box">
+                      <p>Loan EMI</p>
+                      <h5>Rs.19,333</h5>
+                    </div>
+                    <div class="emi-details-box">
+                      <p>Total Interest Payable</p>
+                      <h5>Rs.1,59,968</h5>
+                    </div>
+                    <div class="emi-details-box no-bottom-border">
+                      <p>Total Payment</p>
+                      <h5>Rs.11,59,968</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                    <img class="" src="./images/car-5.jpeg" alt="car" width="200">
+                    <img class="" src="./images/car-6.jpeg" alt="car" width="200">
+                </div>
+              </div>         
+        </div>
+    </section>
+
+    <section id="pay" class="payment">
+        <div class="p-3 text-center mt-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col">
+                    <h3 class="fw-bold text-primary-emphasis pb-4">Pay your money by easy way</h3>
+                    <p class="fw-bold text-secondary">Just click the payment button below.</p>
+                    <p class="fw-bold text-secondary">Your payment will automatically turn on the EMI mode.</p>
+                    <button type="button" class="btn btn-outline-primary">Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
